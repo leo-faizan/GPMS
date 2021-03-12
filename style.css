@@ -1,0 +1,283 @@
+@font-face {
+    font-family: logo;
+    src: url(./fonts/Montserrat-BlackItalic.ttf);
+  }
+  
+  @font-face {
+    font-family: text;
+    src: url(./fonts/Montserrat-BoldItalic.ttf);
+  }
+
+* {
+    margin: 0;
+    font-family:text;
+    color: white;
+}
+
+.logo{
+    padding-top: 1em;
+    text-align: center;
+    font-family: logo;
+}
+
+.title {
+    padding-top: 3em;
+    font-size: 00.6em;
+    text-align: center;
+}
+
+.PAGE-ONE, .PAGE-TWO, .PAGE-THREE {
+    height: 100vh;
+    background: linear-gradient(90deg, #FFC67B 0%, #FF8986 100%);
+}
+
+.container-1 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+    padding: 1em;
+}
+
+.hero-package {
+    position: absolute;
+    top: 15%;
+    width: 20em;
+}
+
+
+.positives > .list-1 > li, .positives .list-2 > li {
+    width: 110%;
+    height: 120%;
+}
+
+.better {
+    font-size: 1em;
+    letter-spacing: 0.1em;
+    position: absolute;
+    top: 60%;
+}
+
+.positives {
+    position: absolute;
+    top: 65%;
+    padding-top: 2em;
+    font-size: 0.6em;
+    display: flex;
+}
+
+.register > h1 {
+    font-size: 1em;
+    background: -webkit-linear-gradient(#FFC67B, #FF8986);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+
+.REGISTER-LINK {
+    position: absolute;
+    top: 85%;
+    right: 50%;
+    transform: translateX(50%);
+}
+
+.register, .GET-FREE-DEMO {
+    border: none;
+    border-radius: 60px;
+    background-color: white;
+    height: 3em;
+    width: 100%;
+}
+
+.register {
+    width: 10em;
+}
+
+
+p{
+    font-size: 0.5em;
+}
+
+.walk {
+    width: 8em;
+}
+
+.slogan{
+    font-size: 1em;
+}
+
+.PAGE-TWO {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+input {
+    height: 2em;
+    border: none;
+    background: none;
+    border-bottom: 2px solid white;
+    transition: 200ms ease;
+}
+
+form > input:focus {
+    background: white;
+    color: #FF8986;
+    font-family: monospace;
+}
+
+form {
+    font-size: 1.5em;
+    height: 40vh;
+    border: 3px solid rgb(255, 255, 255);
+    padding: 2em;
+    padding-bottom: 1em;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.GET-FREE-DEMO > h1 {
+    font-size: 1em;
+    background: -webkit-linear-gradient(#FFC67B, #FF8986);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.PAGE-THREE{
+    border-top: 1px solid white;
+    padding-top: 3em;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;        
+}
+
+.steps {
+    width: 20em;
+    border: 2px solid white;
+    padding: 1em;
+}
+
+.sitting {
+    width: 10em;
+}
+
+.line {
+    text-align: center;
+    font-size: 0.7em;
+}
+
+.para-container > .para-container-one > p, .para-container-two > p {
+    width: 50%;
+    text-align: center;
+    padding: 2em;
+    font-size: 0.8em;
+}
+
+.para-container {
+    display: flex;
+    flex-direction: column;
+}
+
+.para-container-one {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.para-container-two {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+span {
+    text-decoration: underline;
+}
+
+.contact {
+    letter-spacing: 3px;
+    font-size: 0.6em;
+    border-top: 1px solid white;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 7vh;
+    background: linear-gradient(90deg, #FFC67B 0%, #FF8986 100%);
+}
+
+.top {
+    text-align: center;
+    font-size: 0.8em;
+}
+
+.form-container{
+    padding: 1em;
+    background: #FFC67B;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+
+
+#request-package {
+    width: 100%;
+    height: 60vh;
+}
+
+#request-button {
+    width: 10em;
+    height: 2.5em;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+#request-button > h1 {
+    font-size: 0.6em;
+}
+
+.request-text {
+    font-size: 1em;
+    margin: 0mm;
+}
+
+.no-margin {
+    margin: 0;
+}
+
+.box {
+    opacity: 0.5;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.thankyou {
+    height: 100vh;
+    background: #FFC57B;
+}
+
+.thankyou > p {
+    position: absolute;
+    top: 25%;
+    left: 50%;
+    text-align: center;
+    transform: translateX(-50%);
+    font-size: 1em;
+    width: 80%;
+}
+
+.thankyou > img {
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translateX(-50%);
+}
