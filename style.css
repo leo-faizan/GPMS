@@ -14,6 +14,8 @@
     color: white;
 }
 
+
+
 .logo{
     padding-top: 1em;
     text-align: center;
@@ -21,9 +23,15 @@
 }
 
 .title {
-    padding-top: 3em;
-    font-size: 00.6em;
+    font-family: logo;
+    width:fit-content;
     text-align: center;
+    padding: 1em;
+    border: 1px solid white;
+    position: absolute;
+    top: 13%;
+    left: 50%;
+    transform: translateX(-50%);
 }
 
 .PAGE-ONE, .PAGE-TWO, .PAGE-THREE {
@@ -33,34 +41,38 @@
 
 .container-1 {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: center;
     flex-direction: column;
     padding: 1em;
+    height: 60vh;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
 }
 
 .hero-package {
-    position: absolute;
-    top: 15%;
-    width: 20em;
+    width: 80vw;
+    min-width: 15vw;
 }
 
+li{
+    font-size: 1.3em;
+}
 
 .positives > .list-1 > li, .positives .list-2 > li {
     width: 110%;
-    height: 120%;
+    height: 100%;
 }
 
 .better {
+    text-align: center;
     font-size: 1em;
     letter-spacing: 0.1em;
-    position: absolute;
-    top: 60%;
 }
 
 .positives {
-    position: absolute;
-    top: 65%;
     padding-top: 2em;
     font-size: 0.6em;
     display: flex;
@@ -75,7 +87,7 @@
 
 .REGISTER-LINK {
     position: absolute;
-    top: 85%;
+    top: 90%;
     right: 50%;
     transform: translateX(50%);
 }
@@ -85,7 +97,7 @@
     border-radius: 60px;
     background-color: white;
     height: 3em;
-    width: 100%;
+    width: 10em;
 }
 
 .register {
@@ -98,11 +110,14 @@ p{
 }
 
 .walk {
-    width: 8em;
+    min-width: 15vw;
+    width: 23vw;
+    top: -100%;
 }
 
 .slogan{
     font-size: 1em;
+    width: fit-content;
 }
 
 .PAGE-TWO {
@@ -110,6 +125,14 @@ p{
     flex-direction: column;
     justify-content: space-around;
     align-items: center;
+}
+
+.three-container {
+    height: 90vh;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-direction: column-reverse;
 }
 
 input {
@@ -153,22 +176,37 @@ form {
     align-items: center;        
 }
 
+.demo {
+    text-align: center;
+}
+
+.whole-container{
+    height: 80vh;
+}
+
 .steps {
-    width: 20em;
-    border: 2px solid white;
+    width: 50vw;
     padding: 1em;
 }
 
 .sitting {
-    width: 10em;
+    width: 20vw;
+    position: relative;
+    top: 10%;
+    left: 50%;
+    transform: translateX(-50%);
 }
 
 .line {
+    width: fit-content;
     text-align: center;
-    font-size: 0.7em;
+    font-size: 1em;
+    border: 2px solid white;
+    padding: 1em;
+    margin: 0 1em 0 1em;
 }
 
-.para-container > .para-container-one > p, .para-container-two > p {
+.para-container-one > p, .para-container-two > p {
     width: 50%;
     text-align: center;
     padding: 2em;
@@ -176,7 +214,11 @@ form {
 }
 
 .para-container {
+    position: relative;
+    top: 20%;
+    height: 50vh;
     display: flex;
+    align-items: center;
     flex-direction: column;
 }
 
@@ -212,10 +254,10 @@ span {
 .top {
     text-align: center;
     font-size: 0.8em;
+    padding-bottom: 1em;
 }
 
 .form-container{
-    padding: 1em;
     background: #FFC67B;
     height: 100vh;
     display: flex;
@@ -227,7 +269,7 @@ span {
 
 
 #request-package {
-    width: 100%;
+    width: 60vw;
     height: 60vh;
 }
 
@@ -235,9 +277,12 @@ span {
     width: 10em;
     height: 2.5em;
     position: relative;
+    top: -100%;
     left: 50%;
     transform: translateX(-50%);
 }
+
+
 
 #request-button > h1 {
     font-size: 0.6em;
@@ -252,12 +297,22 @@ span {
     margin: 0;
 }
 
+.slogan {
+    font-family: logo;
+}
+
 .box {
+    width: 30vw;
     opacity: 0.5;
     position: absolute;
     left: 50%;
     top: 50%;
     transform: translate(-50%, -50%);
+}
+
+.slogan{
+    border: 2px solid white;
+    padding: 1em;
 }
 
 .thankyou {
@@ -276,8 +331,175 @@ span {
 }
 
 .thankyou > img {
+    width: 25vw;
     position: absolute;
     top: 40%;
     left: 50%;
     transform: translateX(-50%);
 }
+
+@media only screen and (min-width: 900px) {
+
+    .container-1 {
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: 80vw;
+    }
+
+    .hero-package{
+        position: initial;
+        max-width: 30vw;
+    }
+
+    .positives{
+        position: initial;
+        font-size: 1em;
+    }
+
+    .title {
+        font-size: 1em;
+    }
+
+    .better {
+        text-decoration: underline;
+        font-size: 1.2em;
+        position: initial;
+        text-align: center;
+    }
+    .register, .GET-FREE-DEMO {
+        width: 12em;
+        font-size: 1.2em;
+    }
+    
+    .REGISTER-LINK {
+        top: 80%;
+    }
+
+    .line {
+        font-family: logo;
+         letter-spacing: 1px;
+        font-size: 1em;
+        width: 80vw;
+    }
+
+    .sitting{
+       position: initial; 
+        max-width: 15vw;
+        min-width: 1vw;
+    }
+
+    .para-container {
+        height: 50vh;
+        justify-content: space-evenly;
+        flex-direction: column;
+        width: fit-content;
+        position: initial;
+    }
+
+    .whole-container {
+        position: relative;
+        left: 15%;
+       display: flex;
+       flex-direction: row;
+       justify-content: center;
+       align-items: center;
+    }
+
+    .para-container-one > p, .para-container-two > p {
+        width: 50vw;
+        text-align: center;
+        padding: 2em;
+        font-size: 1em;
+    }
+
+    .para-container-one {
+        flex-direction: column;
+    }
+
+    .para-container-two {
+        flex-direction: column;
+    }
+
+    .three-container {
+        flex-direction: row;
+        justify-content: space-around;
+        height: 100%;
+        width: 80%;
+    }
+
+    .PAGE-TWO {
+        width: 100%;
+    }
+
+    .walk {
+        width: 20vh;
+    }
+
+    .steps {
+        width: 40vw;
+    }
+
+    form {
+        width: 40vw;
+    }
+
+    .register, .GET-FREE-DEMO {
+        height: 6vh;
+        width: 13vw;
+    }
+
+    .GET-FREE-DEMO {
+        font-size: 1em;
+    }
+
+}
+
+/* animations */
+
+.text {
+    text-decoration: none;
+}
+
+.intro {
+    background: #FFC57B;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .slider {
+    background: #ff8986;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    transform: translateY(100%);
+  }
+  
+  .intro-text {
+    color: rgb(233, 233, 233);
+    border: 10px solid #ffffff;
+    padding: 3em;
+    font-size: 3rem;
+  }
+  
+  .hide {
+    background: #FFC57B;
+    overflow: hidden;
+  }
+  
+  .hide span {
+    transform: translateY(100%);
+    display: inline-block;
+  }
+  
